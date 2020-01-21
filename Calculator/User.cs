@@ -8,25 +8,21 @@ namespace Calculator
     {
         public IOperation chooseOperation(string choice)
         {
-            //Console.WriteLine("Object passed...");
-            if (choice.Equals("+"))
+            switch (choice)
             {
-                //Console.WriteLine("Object passed...");
-                return new Addition();
+                case "+":   return new Addition(); 
+                   
+                case "-":   return new Substraction(); 
+        
+                case "*":   return new Multiplication();
+                    
+                case "/":   return new Division();
+                    
+                default:
+                    Console.WriteLine("Invalid choice");
+
+                return null;                   
             }
-            else if(choice.Equals("-"))
-            {
-                return new Substraction();
-            }
-            else if (choice.Equals("*"))
-            {
-                return new Multiplication();
-            }
-            else if (choice.Equals("/"))
-            {
-                return new Division();
-            }
-            return null;
         }
     }
 }
