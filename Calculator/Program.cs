@@ -8,12 +8,17 @@ namespace Calculator
         {
             User user = new User();
 
-            IOperation operation =  user.chooseOperation("*");
-            double output = operation.calculate(100, 200);
-            Console.WriteLine("Output of the operation: "+output);
+            IOperation div = user.chooseOperation("/");
+            double output = div.calculate(100, 20);
 
-            IOperation add = new Addition();
-            Console.WriteLine(add.calculate(100, 200));
+            Console.WriteLine("\nOutput of the operation: " + output);
+
+            IOperation mul = user.chooseOperation("*");
+            output = mul.calculate(100, 20);
+
+            Console.WriteLine("Output of the operation: " + output + "\n");
         }
+
+
     }
 }

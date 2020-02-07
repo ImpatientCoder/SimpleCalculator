@@ -10,13 +10,10 @@ namespace Calculator
         {
             if (b == 0)
             {
-                Console.WriteLine("Can't divide by zero..!");
-                return default;
+              Console.WriteLine("Can't divide by zero..!");
+               return default;
             }
-                
-
             return a / b;
         }
-
     }
 }

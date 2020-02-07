@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Calculator
 {
-    class Multiplication: IOperation
+    class Multiplication : IOperation
     {
-        
         public double calculate(double a, double b)
         {
             return a * b;

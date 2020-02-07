@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Calculator
 {
@@ -10,18 +8,18 @@ namespace Calculator
         {
             switch (choice)
             {
-                case "+":   return new Addition(); 
-                   
-                case "-":   return new Substraction(); 
-        
-                case "*":   return new Multiplication();
-                    
-                case "/":   return new Division();
-                    
+                case "+": return new Addition();
+
+                case "-": return new Substraction();
+
+                case "*": return new Multiplication();
+
+                case "/": return new Division();
+
                 default:
                     Console.WriteLine("Invalid choice");
 
-                return null;                   
+                    return null;
             }
         }
     }

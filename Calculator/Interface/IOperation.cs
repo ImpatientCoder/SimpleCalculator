@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Calculator
 {
-    interface IOperation
+    public interface IOperation
     {
         public double calculate(double a, double b);
+
+        /*public Object calculate(Object a, Object b);*/
     }
 }
